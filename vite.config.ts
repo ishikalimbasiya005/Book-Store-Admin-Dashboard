@@ -10,4 +10,20 @@ export default defineConfig({
     tailwindcss(),
     babel({ presets: [reactCompilerPreset()] })
   ],
+  build: {
+    chunkSizeWarningLimit: 3000,
+    rollupOptions: {
+      onwarn(warning, defaultHandler) {
+        if (warning.code === 'EVAL') return;
+        defaultHandler(warning);
+      },
+    },
+    // @ts-ignore - Rolldown options for Vite 6+
+    rolldownOptions: {
+      onwarn(warning: any, defaultHandler: any) {
+        if (warning.code === 'EVAL') return;
+        defaultHandler(warning);
+      },
+    }
+  }
 })
