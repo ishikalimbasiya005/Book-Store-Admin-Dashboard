@@ -1,0 +1,88 @@
+@theme{
+    --color-background:var(--background);
+    --color-main-background:var(--main-background);
+    --color-hover:var(--hover);
+    --color-placeholder:var(--placeholder);
+    --color-inputbox-bg:var(--inputbox-bg);
+    --color-profile-bg:var(--profile-bg);
+    --color-Banner-bg:var(--Banner-bg);
+    --color-primary-text:var(--primary-text);
+    --color-secondary-text:var(--secondary-text);
+    --color-border-color:var(--border-color);
+    --color-top-table-header:var(--top-table-header);
+    --color-selected-row-bg:var(--selected-row-bg);
+    --color-selected-row-bg-hover:var(--selected-row-bg-hover);
+    --color-accent:var(--accent);
+    --color-stat-value-text:var(--stat-value-text);
+    --color-stat-card-hover:var(--stat-card-hover);
+    --color-tracking-active:var(--tracking-active);
+    --color-tracking-inactive:var(--tracking-inactive);
+    --color-success:var(--success);
+    --color-danger:var(--danger);
+    --color-warning:var(--warning);
+    --color-info:var(--info);
+    --color-banner-text:var(--banner-text);
+    --color-sidebar-active:var(--sidebar-active);
+}
+
+:root{
+    --background: #021526;
+    --main-background: #13173d;
+    --hover: #1B2C3B;
+    --placeholder: #CCD0D3;
+    --inputbox-bg: #344351;
+    --profile-bg:#808a92;
+    --Banner-bg: #6647EC;
+    --sidebar-active: #6647EC;
+    --banner-bg-style: #6647EC;
+    --banner-text: #F6F3EB;
+    --banner-border: #696666;
+    --banner-circle-bg: linear-gradient(180deg,#5d4fe3,#8276ff);
+    --primary-text: #FFFFFF;
+    --secondary-text: #F6F3EB;
+    --border-color: #696666;
+    --top-table-header: #0be55f;
+    --selected-row-bg: #1e224f;
+    --selected-row-bg-hover: #292d66;
+    --accent: #2239d4;
+    --stat-value-text: #38bdf8;
+    --stat-card-hover: #1B2C3B;
+    --tracking-active: #10b981;
+    --tracking-inactive: #2a3541;
+    --success: #10b981;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --info: #38bdf8;
+}
+
+[data-theme='light'] {
+    --background: #f6f6f6;
+    --main-background: #ececec;
+    --hover: #e1e1e1;
+    --placeholder: #475569;
+    --inputbox-bg: #ffffff;
+    --profile-bg: #d0d0d0;
+    --Graph-bg: #ffffff;
+    --Banner-bg: #6647EC;
+    --sidebar-active: #111827;
+    --banner-bg-style: linear-gradient(135deg, #f0ebff 0%, #e5deff 100%);
+    --banner-text: #0b0b0b;
+    --banner-border: #d4c6ff;
+    --banner-circle-bg: linear-gradient(180deg, rgba(0,0,0,0.03), rgba(0,0,0,0.08));
+    --primary-text: #0b0b0b;
+    --secondary-text: #1e293b;
+    --border-color: #b0b0b0;
+    --top-table-header: #ececec;
+    --selected-row-bg: #ececec;
+    --selected-row-bg-hover: #e1e1e1;
+    --accent: #111827;
+    --stat-value-text: #0b0b0b;
+    --stat-card-hover: #e1e1e1;
+    --tracking-active: #059669;
+    --tracking-inactive: #9ca3af;
+    --success: #16a34a;
+    --danger: #dc2626;
+    --warning: #ca8a04;
+    --info: #2563eb;
+} 
+

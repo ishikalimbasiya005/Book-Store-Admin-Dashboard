@@ -1,0 +1,147 @@
+/* Ensure no white background bleeds through at scroll end */
+html, body {
+    background-color: var(--background) !important;
+    min-height: 100%;
+}
+#root {
+    background-color: var(--background);
+    min-height: 100vh;
+}
+
+/* Banner block */
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-circle {
+  animation: rotateCircle 8s linear infinite;
+}
+
+@media (min-width: 768px) {
+    .orders-banner__image {
+        min-height: 280px;
+    }
+}
+
+/* Dashboard table icon badges */
+.stats-icon-up {
+    background-color: rgba(5, 150, 105, 0.15);
+    color: #047857;
+}
+[data-theme="dark"] .stats-icon-up {
+    background-color: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+}
+
+.stats-icon-down {
+    background-color: rgba(225, 29, 72, 0.15);
+    color: #be123c;
+}
+[data-theme="dark"] .stats-icon-down {
+    background-color: rgba(244, 63, 94, 0.2);
+    color: #fb7185;
+}
+
+/* Language input  */
+.ant-select-suffix{
+  padding-right: 15px;
+}
+
+.ant-select-clear{
+  background: none !important;
+  color: white !important;
+  font-size: 13px !important;
+}
+
+/* Modal container */
+.ebm-modal-container {
+    @apply w-full max-w-2xl mx-4 rounded-lg border border-border-color p-6 shadow-lg z-60 overflow-y-auto max-h-[calc(100vh-100px)];
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+.ebm-modal-container::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* ++++++++++++++++++  Orders +++++++++++++++++++++++++++++++++++++++++++++++ */
+.orders-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 4px;
+  margin-right: 18px;
+  padding-left: 18px;
+  padding-right: 4px;
+  height: 40px;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  border-radius: 8px;
+  color: var(--primary-text);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  width: calc(99% - 6px);
+  position: relative;
+}
+
+
+/* Active vertical indicator line (matches Ant Design selected item) */
+.orders-trigger--open::before,
+.orders-trigger--active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--sidebar-active);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.orders-trigger__arrow {
+    @apply text-primary-text transition-transform duration-300 ease-in-out text-[20px] opacity-0 ;
+    transform: translateX(-4px);
+    transition: opacity 0.2s ease, transform 0.2s ease, rotate 0.3s ease;
+}
+
+/* Hide scrollbar for the custom-scrollbar container */
+.custom-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.custom-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+/* Number min-max */
+.ebm-input-number::-webkit-outer-spin-button,
+.ebm-input-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.ebm-input-number[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Arrow — rotates 90° when open */
+.orders-trigger:hover .orders-trigger__arrow,
+.orders-trigger--open .orders-trigger__arrow,
+.orders-trigger--active .orders-trigger__arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+.orders-trigger__arrow--open {
+    rotate: 90deg;
+}

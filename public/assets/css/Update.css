@@ -1,0 +1,1977 @@
+
+/* sider css */
+.common-button {
+    @apply flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 cursor-pointer select-none outline-none disabled:opacity-60 disabled:cursor-not-allowed active:scale-95;
+}
+.ant-layout-sider-children{
+    @apply bg-background;
+}
+.ant-menu{
+    @apply bg-background pt-[4%];
+}
+.ant-btn-icon{
+    @apply text-primary-text!;
+}
+.logo{
+    @apply w-30 h-10 shrink-0 object-contain;
+}
+.logo-text{
+    @apply text-lg font-bold text-primary-text! leading-tight;
+}
+.logo-brand-name {
+    @apply text-[17px] font-bold tracking-widest uppercase text-primary-text! leading-none;
+}
+.ant-layout-sider-collapsed .logo {
+    @apply w-30 h-10 mx-auto;
+}
+
+.logo-section{
+    @apply flex flex-col items-center gap-1 w-full;
+}
+
+/* Make Dropdown match the app theme */
+.ant-menu-title-content{
+    @apply text-[16px]! text-primary-text!;
+}
+.ant-menu-item-icon{
+    @apply flex items-center justify-center text-[25px]! text-primary-text!;
+}
+.ant-layout-sider-collapsed .ant-menu-item-icon svg {
+    @apply text-[40px]!;
+}
+
+.ant-layout-sider-collapsed .ant-menu-item-icon,
+.ant-layout-sider-collapsed .ant-menu-title-content {
+    @apply relative z-1
+}
+.ant-layout {
+    @apply bg-background!;
+}
+
+/* Apply main background to the footer */
+.ant-layout-footer {
+    @apply bg-background!;
+}
+
+/* Search bar */
+.Header-section{
+    @apply flex items-center gap-3;
+}
+.ant-input::placeholder{
+    @apply text-primary-text!;
+}
+.ant-input{
+    @apply bg-inputbox-bg text-[14px] text-primary-text!;
+}
+.ant-btn.ant-input-search-btn{
+    @apply bg-inputbox-bg text-[20px] text-primary-text!;
+}
+.ant-space-compact:hover {
+    @apply bg-hover!
+}
+.ant-input:hover{
+    @apply bg-hover;
+}
+.ant-input:focus{
+    @apply bg-hover;
+}
+.ant-btn:hover{
+    @apply bg-hover!;
+}
+.ant-btn:focus{
+    @apply bg-hover!;
+}
+
+/* header icon */
+.ant-btn{
+    @apply text-[20px]!;
+}
+.ant-layout-header{
+    @apply bg-background;
+}
+.icon:hover{
+    @apply transform scale-110 text-[25px]!;
+}
+.header-option{
+    @apply gap-2 flex items-center;
+}
+.ant-avatar {
+    @apply bg-profile-bg!;
+}
+.ant-dropdown-menu-title-content{
+    @apply text-primary-text!;
+}
+.ant-dropdown-menu-title-content:hover{
+    @apply text-secondary-text!;
+}
+.ant-dropdown-menu-item:hover{
+    @apply bg-profile-bg!;
+}
+
+/* Sidebar Active Item Vertical Line */
+.ant-menu-item-selected::before {
+    @apply content-[''] absolute left-0 top-0 w-[4px] h-full bg-sidebar-active rounded-r;
+}
+.ant-layout-content{
+    @apply bg-main-background;
+}
+.responsive-content {
+    @apply p-3 md:p-5;
+}
+.apexcharts-legend{
+    @apply left-0!
+}
+/* Prevent ApexCharts from causing overflow / scrollbar */
+.apexcharts-canvas,
+.apexcharts-canvas svg {
+    @apply overflow-hidden!;
+}
+.anticon.anticon-down{
+    @apply text-primary-text!;
+}
+.ant-select{
+    @apply w-[100%]! rounded-2xl border-2 border-border-color! bg-main-background! text-primary-text;
+}
+
+/* dashboard page effect */
+.ant-dropdown-menu{
+    @apply bg-background! border-2 rounded-full;
+}
+.ant-dropdown-menu-item:hover{
+    @apply bg-hover! 
+}
+.ant-menu-item-selected{
+    @apply bg-hover!;
+}
+.ant-select-item:hover{
+    @apply bg-hover! text-primary-text!;
+}
+.ant-menu-item:hover{
+    @apply bg-hover!;
+}
+.ant-menu-item:hover .ant-menu-title-content,
+.ant-menu-item:hover .ant-menu-item-icon {
+    @apply text-primary-text!;
+}
+.anticon{
+    @apply ml-[3px]!
+}
+.stats-icon-up .anticon,
+.stats-icon-down .anticon {
+    margin-left: 0 !important;
+}
+
+/* dashboard banner */
+.dashboard-banner{
+    @apply w-full flex flex-wrap pt-3 pb-3 border-2 rounded-[20px] mb-[3%] overflow-hidden;
+    background: var(--banner-bg-style);
+    border-color: var(--banner-border) !important;
+}
+.dashboard-banner .row{
+    @apply w-full block md:w-[50%]!;
+}
+.banner-name{
+    @apply mt-[5%] md:mt-[7%] mb-[1%] pl-[5%] text-[14px] md:text-[17px] text-banner-text!;
+}
+.dashboard-title{
+    @apply mt-[1%] pl-[5%] text-[22px] md:text-[28px] lg:text-[32px] mb-[10px] text-banner-text! leading-tight;
+}
+.dashboard-content{
+    @apply mt-[1%] mb-[1%] pl-[5%] text-[14px] md:text-[18px] text-banner-text!;
+}
+.image-banner{
+    @apply float-right pr-[15px] max-h-[160px] md:max-h-none w-auto;
+}
+.rotating-circle{
+    @apply hidden md:block;
+}
+
+/* Ant Design Table Theme Overrides - dashboard*/
+.ant-table {
+    @apply bg-transparent! text-primary-text!;
+}
+.ant-table-wrapper .ant-table-container {
+    @apply rounded-[10px] overflow-hidden;
+}
+.ant-table-thead > tr > th {
+    @apply text-primary-text border-b border-border-color;
+}
+.ant-table-cell{
+    @apply text-secondary-text!;
+}
+.ant-table-tbody > tr > td {
+    @apply border-b border-border-color;
+}
+.ant-table-tbody > tr.ant-table-row:hover > td.ant-table-cell {
+    @apply bg-profile-bg! text-black! dark:text-primary-text!;
+}
+
+/* Custom Table Header Colors - dashboard */
+.top-selling-table .ant-table-thead > tr > th {
+    background: var(--top-table-header) !important;
+}
+[data-theme='dark'] .top-selling-table .ant-table-thead > tr > th,
+:root:not([data-theme='light']) .top-selling-table .ant-table-thead > tr > th {
+    background: var(--success) !important;
+    color: #ffffff !important;
+}
+
+.low-stock-table .ant-table-thead > tr > th {
+    background: var(--top-table-header) !important;
+}
+[data-theme='dark'] .low-stock-table .ant-table-thead > tr > th,
+:root:not([data-theme='light']) .low-stock-table .ant-table-thead > tr > th {
+    background: var(--danger) !important;
+    color: #ffffff !important;
+}
+
+/* ++++++++++++++++++++++++ Book Menu +++++++++++++++++++++++*/
+.book-button{
+    @apply ml-[10%]! bg-profile-bg! flex items-center gap-2  text-secondary-text px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity;
+}
+
+/* book - banner */
+.book-banner{
+    @apply relative w-full h-[300px] bg-background border border-border-color rounded-[25px] overflow-hidden flex shadow-sm;
+}
+.book-banner-left{
+    @apply relative z-20 w-full md:w-[60%] p-8 flex flex-col justify-center h-full;
+}
+.book-banner-title{
+    @apply text-4xl font-bold text-primary-text mb-3 ml-[10%];
+}
+.book-banner-desc{
+    @apply text-primary-text mb-6 max-w-md ml-[10%] mt-1 text-[16px];
+}
+.book-banner-right{
+    @apply absolute right-0 top-0 w-[50%] h-full z-0 hidden md:block;
+}
+.book-banner-right svg{
+    @apply absolute top-0 bottom-0 -left-[1px] h-full w-[120px] text-background fill-current z-10;
+}
+.book-banner-right img{
+    @apply w-full h-full object-cover;
+}
+
+/* Book Card component utilities */
+.book-card{
+    @apply flex bg-background border border-border-color rounded-[20px] shadow-sm hover:shadow-md transition-shadow overflow-hidden h-full;
+}
+.book-card-cover{
+    @apply w-[110px] shrink-0 flex items-center justify-center overflow-hidden;
+}
+.book-card-content{
+    @apply flex flex-col flex-1 p-5 min-w-0;
+}
+.book-card-title{
+    @apply font-bold text-lg text-primary-text mb-1 leading-tight;
+}
+.book-card-author{
+    @apply text-sm text-primary-text! mb-3;
+}
+.book-card-price{
+    @apply font-semibold text-success mb-2;
+}
+.icon-fav{
+    @apply text-danger;
+}
+.icon-fav-empty{
+    @apply text-placeholder;
+}
+.action-edit{
+    @apply text-accent hover:opacity-80 transition-opacity;
+}
+.action-delete{
+    @apply text-danger hover:opacity-80 transition-opacity;
+}
+
+
+/* BooksFilter component utilities */   
+.books-filter-container{
+    @apply w-full bg-background border border-border-color rounded-[20px] p-5 shadow-sm;
+}
+.books-filter-row{
+    @apply flex flex-wrap gap-3;
+}
+.bf-field{
+    @apply min-w-[150px];
+}
+.bf-field-wide{
+    @apply min-w-[180px];
+}
+.bf-field-search{
+    @apply flex-1 min-w-[180px];
+}
+.bf-label{
+    @apply block text-xs font-semibold text-primary-text mb-1 uppercase tracking-wide;
+}
+.bf-input{
+    @apply w-full bg-main-background border border-border-color rounded-xl px-4 py-2 text-sm text-primary-text focus:outline-none focus:border-Banner-bg transition-colors;
+}
+.bf-footer{
+    @apply flex items-center justify-between mt-4 pt-4 border-t border-border-color;
+}
+.bf-count{
+    @apply text-sm text-primary-text;
+}
+.bf-count-num{
+    @apply font-semibold text-primary-text;
+}
+.bf-clear-btn{
+    @apply text-xs font-semibold text-Banner-bg hover:opacity-80 transition-opacity border border-Banner-bg hover:opacity-80 px-3 py-1 rounded-full;
+}
+
+
+
+/* ++++++++++++++++++++++++ BookDetailsDrawer Component +++++++++++++++++++++++*/
+
+.ant-drawer,
+.ant-drawer-content,
+.ant-drawer-content-wrapper,
+.ant-drawer-wrapper-body,
+.ant-drawer-body {
+    @apply border-0! border-l-0! border-r-0! border-t-0! border-b-0! outline-none! shadow-none!;
+}
+
+.ant-drawer-content {
+    @apply bg-transparent!;
+}
+
+.ant-drawer-body {
+    @apply p-0! m-0! flex! flex-col! h-full!;
+}
+
+.bdd-drawer-dark .ant-drawer-content,
+.bdd-drawer-dark .ant-drawer-content-wrapper,
+.bdd-drawer-dark .ant-drawer-wrapper-body {
+    @apply bg-background! shadow-[-12px_0_36px_rgba(0,0,0,0.65)]!;
+}
+
+.bdd-drawer-light .ant-drawer-content,
+.bdd-drawer-light .ant-drawer-content-wrapper,
+.bdd-drawer-light .ant-drawer-wrapper-body {
+    @apply bg-main-background! shadow-[-12px_0_36px_rgba(0,0,0,0.15)]!;
+}
+
+.ant-drawer-mask {
+    @apply backdrop-blur-[5px]! bg-[rgba(0,0,0,0.45)]!;
+}
+
+/* Main drawer container */
+.bdd-container {
+    @apply w-full h-full flex flex-col overflow-hidden;
+}
+
+.bdd-container-dark {
+    @apply bg-background text-primary-text;
+}
+
+.bdd-container-light {
+    @apply bg-main-background text-primary-text;
+}
+
+.bdd-drawer-dark .ant-drawer-content {
+    @apply bg-background! text-primary-text!;
+}
+
+.bdd-drawer-light .ant-drawer-content {
+    @apply bg-main-background! text-primary-text!;
+}
+
+/* Scrollable content area */
+.bdd-content {
+    @apply flex-1 overflow-y-auto p-6 md:p-8 space-y-6;
+}
+
+/* Header with title and badge */
+.bdd-header {
+    @apply flex items-center justify-between pb-1;
+}
+
+.bdd-header-title {
+    @apply text-[20px] font-semibold text-primary-text;
+}
+
+/* Status badge - shared styles */
+.bdd-status-badge {
+    @apply px-4 py-1.5 rounded-full text-[17px] font-bold shadow-sm tracking-wide select-none border;
+}
+
+.bdd-status-in-stock-dark {
+    @apply bg-success/20 text-success border-success/40;
+}
+
+.bdd-status-in-stock-light {
+    @apply bg-success/10 text-success border-success/30;
+}
+
+.bdd-status-out-of-stock-dark {
+    @apply bg-danger/20 text-danger border-danger/40;
+}
+
+.bdd-status-out-of-stock-light {
+    @apply bg-danger/10 text-danger border-danger/30;
+}
+
+/* Close button - shared styles */
+.bdd-close-btn {
+    @apply absolute top-4 right-4 z-50 w-10 h-10 rounded-full border border-border-color cursor-pointer transition-all duration-200 text-primary-text flex items-center justify-center;
+}
+
+.bdd-close-btn-dark {
+    @apply bg-main-background hover:bg-hover;
+}
+
+.bdd-close-btn-light {
+    @apply bg-background hover:bg-hover;
+}
+
+.bdd-close-icon {
+    @apply text-base flex items-center justify-center;
+}
+
+/* Book cover container */
+.bdd-book-cover {
+    @apply relative w-full h-[320px] rounded-xl overflow-hidden bg-background border border-border-color flex items-center justify-center shadow-inner;
+}
+
+.bdd-book-cover-image {
+    @apply max-w-full max-h-full h-full object-contain p-4;
+}
+
+.bdd-book-cover-placeholder {
+    @apply w-full h-full flex items-center justify-center;
+}
+
+.bdd-book-cover-placeholder-letter {
+    @apply text-white text-6xl font-black opacity-80;
+}
+
+/* Title, Author, and Rating Section */
+.bdd-title-section {
+    @apply space-y-2;
+}
+
+.bdd-book-title {
+    @apply text-[24px] font-extrabold tracking-tight text-primary-text leading-snug;
+}
+
+.bdd-book-author {
+    @apply text-[18px] text-primary-text font-medium opacity-90;
+}
+
+.bdd-rating-container {
+    @apply flex items-center gap-2 pt-1;
+}
+
+.bdd-rating-label {
+    @apply text-[17px] font-semibold text-primary-text opacity-75;
+}
+
+/* Structured Info Grid */
+.bdd-info-section {
+    @apply border-t border-b border-border-color/50 py-5;
+}
+
+.bdd-info-title {
+    @apply text-[18px] font-bold uppercase tracking-wider text-primary-text mb-4;
+}
+
+.bdd-info-grid {
+    @apply grid grid-cols-2 gap-x-6 gap-y-4;
+}
+
+.bdd-info-item {
+    @apply space-y-0.5;
+}
+
+.bdd-info-label {
+    @apply text-[12px] text-primary-text font-semibold opacity-70 tracking-wide;
+}
+
+.bdd-info-value {
+    @apply text-[14px] font-bold text-primary-text whitespace-nowrap;
+}
+
+.bdd-info-value-highlight-dark,
+.bdd-info-value-highlight-light {
+    @apply text-success text-[15px] whitespace-nowrap;
+}
+
+/* Description Section */
+.bdd-description-section {
+    @apply space-y-3;
+}
+
+.bdd-description-title {
+    @apply text-[18px] font-bold uppercase tracking-wider text-primary-text;
+}
+
+.bdd-description-text {
+    @apply text-[17px] leading-relaxed text-primary-text opacity-95 text-justify whitespace-pre-line bg-background/40 p-4 rounded-xl border border-border-color/45;
+}
+
+/* ++++++++++++++++++++++++ EditBookModal Component +++++++++++++++++++++++*/
+
+/* Modal backdrop wrapper */
+.ebm-backdrop-wrapper {
+    @apply fixed top-16 bottom-0 left-0 right-0 z-50 flex items-center justify-center;
+}
+
+/* Modal container */
+.ebm-modal-container-dark {
+    @apply bg-background text-primary-text;
+}
+
+.ebm-modal-container-light {
+    @apply bg-main-background text-primary-text;
+}
+
+/* Modal header */
+.ebm-modal-header {
+    @apply flex justify-between items-start mb-4;
+}
+
+.ebm-modal-title {
+    @apply text-lg font-bold text-primary-text;
+}
+
+.ebm-close-btn {
+    @apply text-primary-text cursor-pointer hover:opacity-70 transition-opacity;
+}
+
+/* Form wrapper */
+.ebm-form {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-4;
+}
+
+/* Left column - Image upload */
+.ebm-image-column {
+    @apply md:col-span-1 flex flex-col gap-2;
+}
+
+.ebm-image-dragger {
+    @apply bg-background! border-2! border-dashed! border-border-color! rounded-2xl! overflow-hidden! transition-[border-color]! duration-200! flex! items-center! justify-center!;
+}
+
+.ebm-image-dragger:hover {
+    @apply border-Banner-bg!;
+}
+
+.ebm-dragger-preview {
+    @apply w-full h-full flex items-center justify-center p-2.5;
+}
+
+.ebm-dragger-img {
+    @apply max-w-full max-h-[180px] object-contain;
+}
+
+.ebm-dragger-empty {
+    @apply py-5 px-2.5 text-center;
+}
+
+.ebm-dragger-icon {
+    @apply text-[36px]! text-Banner-bg! mb-2.5!;
+}
+
+.ebm-dragger-text {
+    @apply text-[13px]! font-semibold! text-primary-text! mb-1!;
+}
+
+.ebm-dragger-hint {
+    @apply text-[11px]! text-primary-text! opacity-60!;
+}
+
+.ebm-image-filename {
+    @apply mt-2 text-xs font-medium text-primary-text break-all text-center opacity-75;
+}
+
+/* Right column - Form fields */
+.ebm-form-column {
+    @apply md:col-span-2 grid grid-cols-1 gap-3;
+}
+
+/* Field wrapper */
+.ebm-field {
+    @apply space-y-1;
+}
+
+.ebm-label {
+    @apply block text-xs font-semibold text-primary-text mb-1;
+}
+
+.ebm-input {
+    @apply w-full bg-main-background border border-border-color rounded-xl px-4 py-2 text-sm text-primary-text focus:outline-none focus:border-Banner-bg transition-colors;
+}
+
+
+
+.ebm-select {
+    @apply w-full bg-main-background border border-border-color rounded-xl px-4 py-2 text-sm text-primary-text focus:outline-none focus:border-Banner-bg transition-colors;
+}
+
+.ebm-error {
+    @apply text-danger text-xs mt-1;
+}
+
+/* Price and Stock row */
+.ebm-price-stock-row {
+    @apply flex gap-3 items-center;
+}
+
+.ebm-price-wrapper {
+    @apply flex-1 md:pr-4;
+}
+
+.ebm-stock-wrapper {
+    @apply w-40;
+}
+
+/* Input with controls wrapper */
+.ebm-input-with-controls {
+    @apply relative;
+}
+
+.ebm-input-prefix {
+    @apply absolute left-3 top-1/2 transform -translate-y-1/2 text-sm text-primary-text;
+}
+
+.ebm-input-with-prefix {
+    @apply w-full bg-main-background border border-border-color rounded-xl px-4 py-2 text-sm text-primary-text focus:outline-none focus:border-Banner-bg transition-colors pl-[22px]! pr-28;
+}
+
+.ebm-input-with-suffix {
+    @apply w-full bg-main-background border border-border-color rounded-xl px-4 py-2 text-sm text-primary-text focus:outline-none focus:border-Banner-bg transition-colors pr-20;
+}
+
+/* Input spinner buttons - hide native */
+.ebm-input-number {
+    @apply appearance-none;
+}
+
+.ebm-controls-container {
+    @apply absolute right-2 top-1/2 transform -translate-y-1/2 flex items-center gap-1;
+}
+
+.ebm-control-btn {
+    @apply h-6 px-1 rounded-sm border border-border-color bg-transparent text-primary-text text-xs cursor-pointer transition-colors hover:bg-hover;
+}
+
+.ebm-control-btn-small {
+    @apply h-6 px-1;
+}
+
+
+
+/* Form actions - buttons row */
+.ebm-actions {
+    @apply flex gap-3 justify-end mt-2;
+}
+
+.ebm-cancel-btn {
+    @apply px-4 py-2 rounded-full border border-border-color text-primary-text bg-background hover:bg-hover transition-colors;
+}
+
+.ebm-submit-btn {
+    @apply px-4 py-2 rounded-full bg-profile-bg text-secondary-text font-semibold hover:bg-Banner-bg transition-colors;
+}
+
+.ebm-submit-btn:disabled {
+    @apply opacity-60 cursor-not-allowed;
+}
+
+.ant-layout-content {
+    @apply max-md:p-3;
+}
+
+.Header-section {
+    @apply max-md:pr-3 max-md:gap-[10px];
+}
+
+.header-option {
+    @apply max-md:gap-3;
+}
+
+.header-option .theme-toggle,
+.header-option .chat-message,
+.header-option .bell {
+    @apply max-md:scale-90;
+}
+
+.ebm-form {
+    @apply max-md:flex max-md:flex-col max-md:gap-4;
+}
+
+.ebm-image-column {
+    @apply max-md:w-full;
+}
+
+.ebm-form-column {
+    @apply max-md:w-full;
+}
+
+.ebm-price-stock-row {
+    @apply max-md:flex max-md:flex-col max-md:items-stretch max-md:gap-2;
+}
+
+.ebm-stock-wrapper {
+    @apply max-md:w-full;
+}
+
+/* Book banner title size adjustments */
+.book-banner-title {
+    @apply max-md:text-[1.5rem] max-md:ml-[2%];
+}
+
+.book-banner-desc {
+    @apply max-md:text-[0.875rem] max-md:ml-[2%];
+}
+
+.book-banner-left {
+    @apply max-md:p-4;
+}
+
+.book-button {
+    @apply max-md:ml-0 max-md:px-6 max-md:py-2;
+}
+
+.books-filter-row {
+    @apply max-sm:flex max-sm:flex-col max-sm:gap-3;
+}
+
+.bf-field, 
+.bf-field-wide, 
+.bf-field-search, 
+.bf-input, 
+.language-filter-select.ant-select {
+    @apply max-sm:w-full! max-sm:min-w-0!;
+}
+
+.ant-table-wrapper {
+    @apply w-full overflow-x-auto;
+}
+
+.responsive-sidebar-drawer .ant-drawer-body {
+    background-color: var(--background) !important;
+}
+
+[data-theme="light"] .responsive-sidebar-drawer .ant-drawer-body {
+    background-color: var(--main-background) !important;
+}
+
+/* Language Filter Custom Width and Colors */
+.ant-select-placeholder{
+    @apply text-primary-text!;
+}
+.ant-select-input{
+    @apply text-primary-text!;
+}
+
+.language-filter-select.ant-select {
+    @apply w-[240px]! h-[38px]!;
+}
+
+.language-filter-select.ant-select .ant-select-selector {
+    @apply bg-main-background! border! border-solid! border-border-color! rounded-xl! h-[38px]! px-3! flex! items-center! text-primary-text! shadow-none!;
+}
+
+.language-filter-select.ant-select .ant-select-selection-item {
+    @apply text-primary-text! text-sm! leading-[36px]!;
+}
+
+.language-filter-select.ant-select .ant-select-selection-placeholder {
+    @apply text-placeholder! text-sm! leading-[36px]!;
+}
+
+/* Fix close [x] and arrow icon alignment and overlap */
+
+.language-filter-select.ant-select .ant-select-clear {
+    @apply right-3! opacity-100! z-10! bg-none! text-[15px]! text-primary-text! pr-[17px]!;
+}
+
+.language-filter-select.ant-select .ant-select-suffix {
+    @apply pr-3.75!;
+}
+
+/* Hide the arrow icon when clear icon is hovered or visible */
+.language-filter-select.ant-select:hover .ant-select-arrow {
+    @apply opacity-0!;
+}
+
+/* Ensure dropdown options and selection text colors are correct in both themes */
+.ant-select-dropdown {
+    @apply bg-main-background! border! border-solid! border-border-color!;
+}
+
+.ant-select-dropdown .ant-select-item {
+    @apply text-primary-text!;
+}
+
+.ant-select-dropdown .ant-select-item-option-selected {
+    @apply bg-hover!;
+}
+
+.ant-select-dropdown .ant-select-item-option-active {
+    @apply bg-hover!;
+}
+
+/* Form Language Multi-Select Styling (Add/Edit Modal) */
+.form-language-select.ant-select .ant-select-selector {
+    @apply bg-main-background! border! border-solid! border-border-color! rounded-xl! min-h-[38px]! py-[2px]! px-3! text-primary-text! shadow-none! transition-[border-color]! duration-150! ease-in-out!;
+}
+
+.form-language-select.ant-select-focused .ant-select-selector,
+.form-language-select.ant-select:focus .ant-select-selector {
+    @apply border-Banner-bg!;
+}
+
+/* Selected language tag custom styles */
+.form-language-select.ant-select .ant-select-selection-overflow {
+    @apply py-[2px]!;
+}
+
+.form-language-select.ant-select .ant-select-selection-item {
+    @apply bg-hover! border! border-solid! border-border-color! rounded-[8px]! text-primary-text! text-[13px]! my-[2px]! mr-[4px]! ml-0! inline-flex! items-center!;
+}
+
+.form-language-select.ant-select .ant-select-selection-placeholder {
+    @apply text-placeholder! text-sm! leading-[32px]! left-3!;
+}
+
+  /*  +++++++++++++  ORDERS SUBMENU —  +++++++++++++++++ */
+
+/* Wrapper sits between Ant Menu blocks */
+.orders-wrapper {
+    @apply w-full;
+}
+
+/* Left side: icon + text */
+.orders-trigger__left {
+    @apply flex items-center gap-3;
+}
+.orders-trigger__icon {
+    @apply shrink-0 flex items-center justify-center w-[30px] h-[30px] text-primary-text;
+}
+.orders-trigger__text {
+    @apply text-[16px] text-primary-text;
+}
+
+/* ── Collapsed state styles for Sider ── */
+.ant-layout-sider-collapsed .orders-trigger {
+    @apply justify-center px-0;
+}
+.ant-layout-sider-collapsed .orders-trigger__left {
+    @apply justify-center w-full;
+}
+.ant-layout-sider-collapsed .orders-submenu {
+    @apply hidden!;
+}
+
+/* ── Submenu panel ── */
+.orders-submenu {
+    @apply overflow-hidden opacity-0 transition-all duration-300;
+    max-height: 0;
+}
+
+.orders-submenu--open {
+    @apply opacity-100;
+    max-height: 300px;
+}
+
+/* Inner layout: line + items */
+.orders-submenu__inner {
+    @apply flex pl-6 pr-3 pt-1 pb-1 gap-2 relative;
+}
+
+/* Vertical connector line */
+.orders-submenu__line {
+    @apply absolute left-[33px] top-2 bottom-[20px] w-[2px] rounded-full;
+    background: linear-gradient( to bottom, var(--sidebar-active), transparent );
+}
+
+.orders-submenu__items {
+    @apply flex flex-col gap-1 w-full ml-0;
+}
+
+/* ── Individual submenu item ── */
+.orders-sub-item {
+    @apply w-full flex items-center gap-2 pl-[6px] pr-3 py-1.5 rounded-lg cursor-pointer border-0 bg-transparent text-left transition-all duration-200 outline-none text-primary-text relative;
+}
+/* No background change on hover, only text/icon color changes */
+.orders-sub-item:hover {
+    @apply bg-transparent!;
+}
+
+/* Dot indicator */
+.orders-sub-item__dot {
+    @apply w-[7px] h-[7px] rounded-full shrink-0 border-2 border-primary-text opacity-40 transition-all duration-200;
+}
+.orders-sub-item:hover .orders-sub-item__dot,
+.orders-sub-item--active .orders-sub-item__dot {
+    @apply opacity-100 border-sidebar-active bg-sidebar-active;
+}
+
+/* Sub-item icon */
+.orders-sub-item__icon {
+    @apply text-primary-text opacity-60 transition-opacity duration-200 shrink-0;
+}
+.orders-sub-item:hover .orders-sub-item__icon,
+.orders-sub-item--active .orders-sub-item__icon {
+    @apply opacity-100 text-sidebar-active!;
+}
+
+/* Sub-item label */
+.orders-sub-item__label {
+    @apply text-sm font-medium text-primary-text opacity-70
+           whitespace-nowrap
+           transition-opacity duration-200;
+}
+.orders-sub-item:hover .orders-sub-item__label,
+.orders-sub-item--active .orders-sub-item__label {
+    @apply text-sidebar-active! opacity-100;
+}
+
+/* Active item highlight */
+.orders-sub-item--active {
+    @apply bg-hover;
+}
+.upgrade-btn {
+    @apply bg-sidebar-active!;
+}
+
+/* Remove spacing on secondary menu to prevent extra gap under submenu */
+.sidebar-menu-secondary.ant-menu {
+    @apply pt-0!;
+}
+
+/* Remove old stub */
+
+/* ++++++++++++++++++++++++ Orders Banner component +++++++++++++++++++++++*/
+.orders-banner {
+    @apply w-full flex flex-wrap items-stretch border-2 border-border-color rounded-[20px] mb-[3%] overflow-hidden relative shadow-md transition-all duration-300;
+    background: var(--banner-bg-style);
+    border-color: var(--banner-border) !important;
+}
+.orders-banner:hover {
+    @apply shadow-lg transform scale-[1.005];
+}
+
+/* Background decorative circle to match dashboard banner */
+.orders-banner__circle {
+    @apply absolute -bottom-[100px] -right-[100px] z-0 w-[240px] h-[240px] rounded-full opacity-40 pointer-events-none;
+    background: var(--banner-circle-bg) !important;
+}
+
+.orders-banner__row {
+    @apply w-full flex flex-wrap items-stretch z-10 relative;
+}
+
+.orders-banner__image-col {
+    @apply w-[45%] flex items-stretch overflow-hidden pl-0;
+}
+
+.orders-banner__image {
+    @apply w-full h-full object-contain transition-transform duration-500 ease-out;
+    object-position: left center;
+    min-height: 140px;
+}
+.orders-banner:hover .orders-banner__image {
+    @apply transform scale-105;
+}
+
+.orders-banner__content-col {
+    @apply w-[55%] flex flex-col justify-center text-left p-4 sm:p-6 md:p-10 md:pl-10;
+}
+
+.orders-banner__title {
+    @apply text-[28px] md:text-[36px] lg:text-[42px] font-bold text-banner-text! leading-tight mb-3;
+}
+
+.orders-banner__desc {
+    @apply text-[14px] md:text-[16px] lg:text-[17px] text-banner-text! opacity-90 leading-relaxed max-w-xl;
+}
+
+/* ++++++++++++++++++++++++ Order Statistics Cards component +++++++++++++++++++++++*/
+.order-stats-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-full mb-6;
+}
+
+.order-stat-card {
+    @apply flex items-center gap-4 p-5 bg-background border border-border-color rounded-[20px] shadow-sm select-none transition-all duration-300;
+}
+.order-stat-card:hover {
+    @apply shadow-md transform -translate-y-1 bg-hover;
+}
+
+[data-theme='light'] .order-stat-card:hover {
+    background-color: var(--stat-card-hover) !important;
+}
+
+.order-stat-card__icon-wrapper {
+    @apply flex items-center justify-center shrink-0 w-14 h-14 rounded-2xl border border-border-color bg-main-background text-primary-text transition-all duration-300;
+}
+.order-stat-card:hover .order-stat-card__icon-wrapper {
+    background-color: var(--sidebar-active) !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+    transform: scale(1.05);
+}
+
+.order-stat-card__content {
+    @apply flex flex-col justify-center min-w-0;
+}
+
+.order-stat-card__value {
+    @apply text-2xl md:text-3xl font-bold text-stat-value-text leading-tight mb-0.5;
+}
+
+.order-stat-card__title {
+    @apply text-[15px] font-semibold text-primary-text leading-tight mb-1;
+}
+
+.order-stat-card__trend {
+    @apply text-xs font-semibold;
+}
+.order-stat-card__trend--up {
+    @apply text-success;
+}
+.order-stat-card__trend--down {
+    @apply text-danger;
+}
+.order-stat-card__trend--neutral {
+    @apply text-placeholder;
+}
+
+/* ++++++++++++++++++++++++ Orders Analytics Cards +++++++++++++++++++++++*/
+.orders-analytics-card {
+    @apply bg-background border border-border-color rounded-[25px] p-5 flex flex-col min-h-[380px] w-full relative overflow-hidden text-primary-text transition-all duration-300;
+}
+.orders-analytics-card:hover {
+    @apply shadow-md border-border-color/60;
+}
+
+.orders-analytics-card__header {
+    @apply flex justify-between items-center mb-4 shrink-0;
+}
+
+.orders-analytics-card__title {
+    @apply text-[18px] md:text-[20px] font-bold text-primary-text tracking-tight;
+}
+
+.orders-analytics-table__header {
+    @apply flex items-center text-xs font-bold text-placeholder tracking-wider uppercase border-b border-border-color/30 pb-2 mb-3 shrink-0;
+}
+
+.orders-analytics-table__header-meta {
+    @apply flex items-center justify-between w-full sm:w-[60%] gap-2;
+}
+
+.orders-analytics-table__header-status {
+    @apply w-1/2 sm:w-1/2 text-left text-primary-text!;
+}
+
+.orders-analytics-table__header-count {
+    @apply w-1/2 sm:w-1/2 text-right sm:text-left text-primary-text! pr-0 sm:pr-4;
+}
+
+.orders-analytics-table__header-bar {
+    @apply hidden sm:block sm:w-[40%];
+}
+
+.orders-analytics-table__body {
+    @apply flex-1 flex flex-col justify-between gap-1.5;
+}
+
+.orders-analytics-table__row {
+    @apply flex flex-col sm:flex-row sm:items-center py-3 sm:py-2.5 gap-1.5 sm:gap-4 border-b border-border-color/10 last:border-b-0 text-[14px];
+}
+
+.orders-analytics-table__row-meta {
+    @apply flex items-center justify-between w-full sm:w-[60%] gap-2;
+}
+
+.orders-analytics-table__status {
+    @apply w-1/2 sm:w-1/2 font-semibold text-primary-text truncate pr-2;
+}
+
+.orders-analytics-table__count {
+    @apply w-1/2 sm:w-1/2 flex items-center justify-end sm:justify-start pr-0 sm:pr-4;
+}
+
+.orders-analytics-table__pill {
+    @apply bg-hover px-3 py-1 rounded-full text-xs font-bold text-primary-text flex items-center gap-1.5 border border-border-color shrink-0;
+}
+
+.orders-analytics-table__bar {
+    @apply w-full sm:w-[40%] h-5 relative mt-1 sm:mt-0;
+}
+
+.orders-analytics-payments-container {
+    @apply flex-1 flex flex-col xl:flex-row items-center gap-6 xl:gap-10 w-full min-h-0;
+}
+
+.orders-analytics-chart-wrapper {
+    @apply relative w-[220px] h-[220px] xl:w-[240px] xl:h-[240px] shrink-0 xl:mx-0 mx-auto;
+}
+
+.orders-analytics-center-label {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none flex flex-col items-center justify-center;
+    z-index: 10;
+}
+
+.orders-analytics-center-label__title {
+    @apply text-[10px] font-semibold text-placeholder tracking-wider uppercase leading-tight mb-1;
+}
+
+.orders-analytics-center-label__value {
+    @apply text-lg sm:text-xl md:text-2xl font-extrabold text-primary-text leading-none;
+}
+
+.orders-analytics-legend {
+    @apply flex-1 flex flex-col justify-center gap-2 w-full pr-1;
+}
+
+.orders-analytics-legend__item {
+    @apply flex items-center justify-between py-1.5 border-b border-border-color/10 last:border-b-0;
+}
+
+.orders-analytics-tooltip {
+    @apply bg-inputbox-bg border border-border-color p-3 rounded-2xl shadow-xl text-[13px] pointer-events-none;
+}
+
+.orders-analytics-pie-slice {
+    @apply outline-none stroke-background stroke-2 cursor-pointer transition-all duration-300;
+}
+
+.recharts-tooltip-wrapper {
+    z-index: 9999 !important;
+}
+
+/* ++++++++++++++++++++++++ EditBookModal DatePicker +++++++++++++++++++++++*/
+.ebm-datepicker.ant-picker {
+    @apply w-full bg-main-background! border border-solid border-border-color! rounded-xl px-4 py-2 text-sm text-primary-text! shadow-none transition-colors h-[38px] flex items-center;
+}
+.ebm-datepicker.ant-picker:hover,
+.ebm-datepicker.ant-picker-focused {
+    @apply border-indigo-400!;
+}
+.ebm-datepicker.ant-picker .ant-picker-input > input {
+    @apply text-primary-text! text-sm;
+}
+.ebm-datepicker.ant-picker .ant-picker-input > input::placeholder {
+    @apply text-placeholder!;
+}
+.ebm-datepicker.ant-picker .ant-picker-suffix {
+    @apply text-primary-text!;
+}
+.ebm-datepicker.ant-picker .ant-picker-clear {
+    @apply bg-main-background! text-primary-text!;
+}
+
+/* Picker Dropdown Calendar Styling */
+.ant-picker-dropdown {
+    @apply z-[9999]!;
+}
+.ant-picker-dropdown .ant-picker-panel-container {
+    @apply bg-main-background! border border-solid border-border-color! rounded-xl text-primary-text! shadow-xl!;
+}
+.ant-picker-dropdown .ant-picker-header {
+    @apply text-primary-text! border-b border-solid border-border-color/30!;
+}
+.ant-picker-dropdown .ant-picker-header button {
+    @apply text-primary-text! hover:text-indigo-400!;
+}
+.ant-picker-dropdown .ant-picker-content th {
+    @apply text-primary-text!;
+}
+.ant-picker-dropdown .ant-picker-cell {
+    @apply text-placeholder!;
+}
+.ant-picker-dropdown .ant-picker-cell-in-view {
+    @apply text-primary-text!;
+}
+.ant-picker-dropdown .ant-picker-cell-inner {
+    @apply hover:bg-hover! text-primary-text!;
+}
+.ant-picker-dropdown .ant-picker-cell-selected .ant-picker-cell-inner {
+    @apply bg-indigo-500! text-white! rounded-lg!;
+}
+.ant-picker-dropdown .ant-picker-cell-today .ant-picker-cell-inner::before {
+    @apply border-indigo-400! rounded-lg!;
+}
+
+/* ++++++++++++++++++++++++ TipTap RichTextEditor +++++++++++++++++++++++*/
+.rich-text-editor {
+    @apply border border-border-color rounded-xl overflow-hidden bg-main-background;
+}
+
+.rich-text-editor__toolbar {
+    @apply flex flex-wrap items-center gap-1.5 p-2 bg-hover border-b border-border-color;
+}
+
+.rich-text-editor__content {
+    outline: none;
+}
+
+/* TipTap ProseMirror list elements and typography styling */
+.ProseMirror p {
+    @apply mb-2 last:mb-0;
+}
+
+.ProseMirror ul {
+    list-style-type: disc !important;
+    @apply pl-6 mb-4;
+}
+
+.ProseMirror ol {
+    list-style-type: decimal !important;
+    @apply pl-6 mb-4;
+}
+
+.ProseMirror li {
+    @apply mb-1;
+}
+
+.ProseMirror blockquote {
+    @apply border-l-4 border-border-color pl-4 italic my-4 text-placeholder;
+}
+
+.ProseMirror a {
+    @apply text-indigo-400 underline cursor-pointer;
+}
+
+/* CSS Placeholder for TipTap content */
+.ProseMirror p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    @apply text-placeholder opacity-60 float-left pointer-events-none h-0;
+}
+
+/* Toolbar button style overrides for CommonButton wrapper */
+.rich-text-editor__btn.common-button {
+    @apply p-1.5 rounded-lg border border-transparent bg-transparent text-primary-text transition-all duration-200 cursor-pointer flex items-center justify-center h-8 w-8 scale-100! active:scale-95! font-normal!;
+}
+
+.rich-text-editor__btn.common-button:hover {
+    @apply bg-main-background!;
+}
+
+.rich-text-editor__btn--active.common-button {
+    @apply bg-main-background! border-border-color/60! font-bold!;
+}
+
+.rich-text-editor__btn.common-button:disabled {
+    @apply opacity-40! cursor-not-allowed!;
+}
+
+/* ++++++++++++++++++++++++ Orders Table component +++++++++++++++++++++++*/
+.orders-table-card {
+    @apply bg-background border border-border-color rounded-[25px] p-5 flex flex-col w-full relative overflow-hidden text-primary-text transition-all duration-300 shadow-sm min-h-0 mt-5;
+}
+.orders-table-card:hover {
+    @apply shadow-md border-border-color/60;
+}
+
+/* Columns Popover Styling */
+.columns-popover {
+    --ant-popover-bg: var(--main-background) !important;
+    --ant-color-bg-elevated: var(--main-background) !important;
+    --antd-color-bg-elevated: var(--main-background) !important;
+}
+.columns-popover .ant-popover-inner,
+.columns-popover .ant-popover-content,
+.columns-popover .ant-popover-inner-content {
+    background-color: var(--main-background) !important;
+    background: var(--main-background) !important;
+    color: var(--primary-text) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 12px;
+}
+.columns-popover .ant-popover-arrow::before {
+    background-color: var(--main-background) !important;
+    background: var(--main-background) !important;
+}
+.columns-popover .ant-popover-title {
+    @apply border-b border-border-color/30 pb-2 mb-3 text-placeholder! font-semibold;
+    color: var(--placeholder) !important;
+}
+.columns-popover-grid {
+    @apply flex flex-col gap-2.5 min-w-[160px];
+}
+.columns-popover-checkbox.ant-checkbox-wrapper {
+    @apply text-primary-text! font-medium text-sm transition-colors duration-200 cursor-pointer w-full;
+}
+.columns-popover-checkbox.ant-checkbox-wrapper > span {
+    color: var(--primary-text) !important;
+}
+.columns-popover-checkbox.ant-checkbox-wrapper:hover {
+    @apply text-indigo-500! dark:text-indigo-400!;
+}
+
+/* Settings button at right side of header with opacity background */
+.orders-settings-btn {
+    @apply p-2 rounded-xl bg-accent/10 text-accent hover:bg-accent/20 active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center h-9 w-9 border border-accent/15;
+}
+
+.orders-table-wrapper {
+    @apply w-full overflow-x-auto;
+}
+
+.orders-table .ant-table {
+    @apply bg-transparent! text-primary-text!;
+}
+.orders-table .ant-table-thead > tr > th {
+    @apply bg-hover! text-primary-text! font-bold text-xs uppercase tracking-wider border-b border-border-color/40 py-3.5;
+}
+.orders-table .ant-table-tbody > tr > td {
+    @apply border-b border-border-color/20 py-4 text-sm text-primary-text!;
+}
+.orders-table .ant-table-tbody > tr.ant-table-row:hover > td {
+    @apply bg-hover/40! text-primary-text!;
+}
+
+/* Badges for status */
+.badge-status {
+    @apply px-3 py-0.5 rounded-full text-xs font-semibold inline-flex items-center justify-center border transition-all duration-200 select-none bg-transparent;
+}
+.badge-paid {
+    @apply text-success! border-success!;
+}
+
+.badge-failed,
+.badge-unpaid {
+    @apply text-danger! border-danger!;
+}
+.badge-refunded {
+    @apply text-info! border-info!;
+}
+.badge-pending {
+    @apply text-warning! border-warning!;
+}
+.badge-approved,
+.badge-received {
+    @apply text-success! border-success!;
+}
+.badge-rejected {
+    @apply text-danger! border-danger!;
+}
+
+/* Payment Method Badges */
+.payment-method-badge {
+    @apply bg-hover px-2.5 py-1 rounded-lg text-xs font-semibold text-primary-text border border-border-color/30 inline-flex items-center justify-center;
+}
+
+/* Tracking Number */
+.tracking-number-text {
+    @apply font-mono text-xs text-placeholder tracking-wide bg-hover/30 px-2 py-0.5 rounded border border-border-color/10;
+}
+
+/* View Eye button */
+.view-order-btn {
+    @apply p-2 rounded-lg border border-border-color bg-main-background text-primary-text hover:bg-hover hover:text-indigo-500 active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center h-8 w-8 mx-auto;
+}
+
+/* Approve / Reject buttons */
+.action-approve-btn {
+    @apply p-2 rounded-lg border border-border-color bg-main-background text-success hover:bg-hover hover:text-success active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center h-8 w-8;
+}
+.action-approve-btn:disabled {
+    @apply opacity-40 cursor-not-allowed active:scale-100!;
+}
+
+.action-reject-btn {
+    @apply p-2 rounded-lg border border-border-color bg-main-background text-danger hover:bg-hover hover:text-danger active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center h-8 w-8;
+}
+.action-reject-btn:disabled {
+    @apply opacity-40 cursor-not-allowed active:scale-100!;
+}
+
+.action-buttons-container {
+    @apply flex items-center justify-center gap-2;
+}
+
+.action-buttons-container .view-order-btn {
+    @apply mx-0;
+}
+
+/* Custom Select Widths for Transaction Filters */
+.w-status-select {
+    @apply w-full sm:w-[110px]!;
+}
+.w-method-select {
+    @apply w-full sm:w-[125px]!;
+}
+.w-date-select {
+    @apply w-full sm:w-[105px]!;
+}
+
+/* Pagination Overrides */
+.orders-table-wrapper .ant-pagination {
+    @apply mt-4 mb-2 flex items-center justify-end gap-1.5;
+}
+.orders-table-wrapper .ant-pagination-item {
+    @apply bg-main-background! border-border-color! rounded-lg transition-all duration-200;
+}
+.orders-table-wrapper .ant-pagination-item a {
+    @apply text-secondary-text! hover:text-indigo-500!;
+}
+.orders-table-wrapper .ant-pagination-item-active {
+    @apply bg-indigo-600! border-indigo-600! font-bold!;
+}
+.orders-table-wrapper .ant-pagination-item-active a {
+    @apply text-white! hover:text-white!;
+}
+.orders-table-wrapper .ant-pagination-prev .ant-pagination-item-link,
+.orders-table-wrapper .ant-pagination-next .ant-pagination-item-link {
+    @apply bg-main-background! border-border-color! rounded-lg text-secondary-text! hover:text-indigo-500! transition-all duration-200 flex items-center justify-center;
+}
+.orders-table-wrapper .ant-pagination-disabled .ant-pagination-item-link {
+    @apply opacity-40! cursor-not-allowed!;
+}
+.orders-table-wrapper .ant-pagination-total-text {
+    color: var(--placeholder) !important;
+    font-weight: 500;
+}
+.orders-table-wrapper .ant-select-selection-item {
+    color: var(--primary-text) !important;
+}
+.orders-table-wrapper .ant-select-selector {
+    background-color: var(--main-background) !important;
+    border-color: var(--border-color) !important;
+}
+.ant-checkbox-label{
+    color: var(--primary-text) !important;
+}
+
+/* Trash/Delete button styling */
+.orders-delete-btn {
+    @apply p-2 rounded-xl transition-all duration-200 cursor-pointer flex items-center justify-center h-9 w-9 border;
+}
+.orders-delete-btn:not(:disabled) {
+    @apply bg-danger/10 text-danger hover:bg-danger/20 active:scale-95 border-danger/15;
+}
+.orders-delete-btn:disabled {
+    @apply opacity-30 cursor-not-allowed bg-hover text-placeholder border-border-color/20;
+}
+
+/* Row selection column adjustments */
+.orders-table .ant-table-selection-column {
+    @apply px-4 text-center;
+}
+.orders-table .ant-checkbox-inner {
+    @apply bg-main-background! border-border-color! rounded-md!;
+}
+.orders-table .ant-checkbox-checked .ant-checkbox-inner {
+    @apply bg-indigo-600! border-indigo-600!;
+}
+
+/* Selected row styling overrides */
+.orders-table .ant-table-tbody > tr.ant-table-row-selected > td {
+    @apply bg-selected-row-bg!;
+}
+.orders-table .ant-table-tbody > tr.ant-table-row-selected:hover > td {
+    @apply bg-selected-row-bg-hover!;
+}
+
+/* Ant Design Modal & Confirm Dialog Aesthetics styling */
+.ant-modal-content {
+    @apply bg-inputbox-bg! border border-border-color/20! rounded-[20px]! shadow-2xl!;
+}
+
+[data-theme='light'] .ant-modal-content {
+    @apply border-border-color/10! shadow-lg!;
+}
+
+.ant-modal-header,
+.ant-modal-title,
+.ant-modal-confirm-title {
+    @apply bg-transparent! text-primary-text! font-bold! text-[18px]!;
+}
+
+.ant-modal-body,
+.ant-modal-confirm-content {
+    @apply text-primary-text! opacity-90! text-[15px]! mt-2!;
+}
+
+.ant-modal-close {
+    @apply text-primary-text! opacity-60 transition-opacity duration-200;
+}
+.ant-modal-close:hover {
+    @apply opacity-100;
+}
+
+.ant-modal-confirm-btns {
+    @apply mt-6! flex justify-end gap-2.5;
+}
+
+.ant-modal-confirm-btns .ant-btn:not(.ant-btn-dangerous):not(.ant-btn-primary) {
+    @apply bg-hover! border border-border-color! text-primary-text! rounded-full! font-semibold! text-sm! h-[38px]! px-[18px]! transition-all duration-200;
+}
+
+.ant-modal-confirm-btns .ant-btn:not(.ant-btn-dangerous):not(.ant-btn-primary):hover {
+    @apply bg-main-background! border-primary-text!;
+}
+
+.ant-modal-confirm-btns .ant-btn-dangerous,
+.ant-modal-confirm-btns .ant-btn-primary {
+    @apply bg-red-500! border border-red-500! text-white! rounded-full! font-semibold! text-sm! h-[38px]! px-[18px]! transition-all duration-200 shadow-md;
+}
+
+.ant-modal-confirm-btns .ant-btn-dangerous:hover,
+.ant-modal-confirm-btns .ant-btn-primary:hover {
+    @apply bg-red-600! border-red-600!;
+}
+
+.ant-modal-wrap {
+    @apply backdrop-blur-[4px];
+}
+
+.orders-export-btn {
+    @apply px-3 py-2 rounded-xl bg-success/10 text-success hover:bg-success/20 active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center h-9 border border-success/15 font-semibold text-sm;
+}
+.orders-export-btn:disabled {
+    @apply opacity-30 cursor-not-allowed bg-hover text-placeholder border-border-color/20;
+}
+
+/* Ant Design Message styling overrides */
+.ant-message-notice-content {
+    @apply bg-inputbox-bg! border border-border-color/20! text-primary-text! rounded-full! px-5! py-2.5! shadow-xl! text-sm! font-medium!;
+}
+
+[data-theme='light'] .ant-message-notice-content {
+    @apply border-border-color/10! shadow-md!;
+}
+
+/* Ant Design Notification styling overrides */
+.ant-notification-notice {
+    @apply bg-inputbox-bg! border border-border-color/20! rounded-[20px]! p-5! shadow-2xl!;
+}
+
+[data-theme='light'] .ant-notification-notice {
+    @apply border-border-color/10! shadow-lg!;
+}
+
+.ant-notification-notice-message {
+    @apply text-primary-text! font-bold! text-[15px]! mb-1!;
+}
+
+.ant-notification-notice-description {
+    @apply text-primary-text! opacity-80! text-xs! leading-relaxed!;
+}
+
+.ant-notification-notice-close {
+    @apply text-primary-text! opacity-60! transition-opacity duration-200!;
+}
+.ant-notification-notice-close:hover {
+    @apply opacity-100!;
+}
+
+/* ++++++++++++++++++++++++ Order Details Component Styling +++++++++++++++++++++++ */
+.order-details-container {
+    @apply w-full flex flex-col gap-6;
+}
+.order-details-header {
+    @apply flex items-center gap-4;
+}
+.order-details-back-btn {
+    @apply p-2 rounded-xl bg-accent/10 text-accent hover:bg-accent/20 active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center h-9 w-9 border border-accent/15;
+}
+.order-details-title {
+    @apply font-bold text-2xl text-primary-text;
+}
+
+/* Order Info Banner Card */
+.order-info-card {
+    @apply bg-background border border-border-color/20 rounded-[20px] p-5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4;
+}
+.order-info-id {
+    @apply font-bold text-lg text-primary-text;
+}
+.order-info-customer,
+.order-info-date {
+    @apply text-sm text-placeholder;
+}
+
+
+
+/* Left: Books Table Card */
+.order-table-details-card {
+    @apply bg-background border border-border-color/20 rounded-[20px] p-5 w-full;
+}
+.order-table-details-card__title {
+    @apply font-bold text-lg text-primary-text;
+}
+
+/* Ant Design Table Overrides inside Details */
+.order-details-table .ant-table {
+    @apply bg-transparent! text-primary-text!;
+}
+.order-details-table .ant-table-thead > tr > th {
+    @apply bg-hover! text-primary-text! font-bold text-xs uppercase tracking-wider border-b border-border-color/40 py-3.5;
+}
+.order-details-table .ant-table-tbody > tr > td {
+    @apply border-b border-border-color/20 py-4 text-sm text-primary-text!;
+}
+.order-details-table .ant-table-tbody > tr.ant-table-row:hover > td {
+    @apply bg-hover/40! text-primary-text!;
+}
+
+/* Right: Summary Card */
+.order-summary-detail-card {
+    @apply bg-background border border-border-color/20 rounded-[20px] p-5 text-primary-text flex flex-col gap-4;
+}
+.order-summary-detail-card__title {
+    @apply font-bold text-[18px] text-primary-text;
+}
+.order-summary-detail-card__list {
+    @apply flex flex-col gap-2.5;
+}
+.order-summary-detail-card__item {
+    @apply flex justify-between items-center text-sm font-medium text-primary-text;
+}
+.order-summary-detail-card__item--grand {
+    @apply text-base font-extrabold text-primary-text;
+}
+.order-summary-detail-card__divider {
+    @apply border-t border-border-color/20 my-1;
+}
+.order-summary-detail-card__pay-btn {
+    @apply w-full bg-[#111] text-white font-bold py-3 rounded-xl mt-2 flex items-center justify-center gap-2 shadow-md cursor-default select-none;
+}
+
+/* Bottom: Customer Address Card */
+.order-customer-details-card {
+    @apply bg-background border border-border-color/20 rounded-[20px] p-5 w-full;
+}
+.order-customer-details-card__title {
+    @apply font-bold text-lg text-primary-text mb-3;
+}
+.order-customer-details-card__label {
+    @apply text-xs font-semibold uppercase tracking-wider text-placeholder;
+}
+.order-customer-details-card__value {
+    @apply text-sm font-medium text-primary-text mt-0.5;
+}
+
+/* Cancel Action Link Button Reset inside Purchased Books Table */
+.order-details-cancel-btn {
+    @apply bg-transparent! border-none! shadow-none! p-0! h-auto! min-h-0! rounded-none! active:scale-100! inline-block!;
+}
+
+/* Bottom 2: Order Tracking Card styling */
+.order-tracking-card {
+    @apply bg-background border border-border-color/20 rounded-[20px] p-5 w-full mt-6;
+}
+.order-tracking-card__title {
+    @apply font-bold text-lg text-primary-text mb-4;
+}
+
+/* Timeline vertical lines */
+.tracking-line {
+    @apply absolute left-[11px] top-6 bottom-0 w-[2px];
+}
+.tracking-line--active {
+    @apply bg-tracking-active;
+}
+.tracking-line--inactive {
+    @apply bg-tracking-inactive;
+}
+
+/* Timeline indicators */
+.tracking-dot--active {
+    @apply w-6 h-6 rounded-full bg-tracking-active flex items-center justify-center text-white text-xs font-bold select-none;
+}
+.tracking-dot--inactive {
+    @apply w-3 h-3 rounded-full bg-tracking-inactive select-none;
+}
+
+/* eye Icon List */
+.ant-modal-container{
+    @apply bg-background! border! border-border-color!;
+}
+
+/* ==================== MESSAGES PAGE ==================== */
+
+/* Banner icon (SVG as large visual) */
+.msg-banner-icon {
+    @apply w-[110px] h-[110px] text-white opacity-90 drop-shadow-lg;
+}
+
+/* Customer cell – avatar + info */
+.msg-customer-cell {
+    @apply flex items-center gap-3;
+}
+
+.msg-avatar {
+    @apply shrink-0 w-9 h-9 rounded-full overflow-hidden flex items-center justify-center bg-hover border border-border-color;
+}
+.msg-avatar__img {
+    @apply w-full h-full object-cover;
+}
+.msg-avatar__initials {
+    @apply text-xs font-bold text-primary-text uppercase;
+}
+
+.msg-customer-info {
+    @apply flex flex-col min-w-0;
+}
+.msg-customer-name {
+    @apply text-sm font-semibold text-primary-text truncate;
+}
+.msg-customer-email {
+    @apply text-xs text-placeholder truncate;
+}
+
+/* Subject cell – title + snippet */
+.msg-subject-cell {
+    @apply flex flex-col min-w-0 max-w-[280px];
+}
+.msg-subject-title {
+    @apply text-sm font-semibold text-primary-text truncate;
+}
+.msg-subject-preview {
+    @apply text-xs text-placeholder truncate;
+}
+
+/* Status badges */
+.badge-msg-status {
+    @apply rounded-full text-xs font-semibold px-3 py-0.5 border-0! uppercase tracking-wide;
+}
+.badge-msg-unread {
+    background-color: rgba(245, 158, 11, 0.12) !important;
+    color: #d97706 !important;
+}
+.badge-msg-read {
+    background-color: rgba(34, 197, 94, 0.12) !important;
+    color: #16a34a !important;
+}
+[data-theme='dark'] .badge-msg-unread {
+    background-color: rgba(245, 158, 11, 0.2) !important;
+    color: #fbbf24 !important;
+}
+[data-theme='dark'] .badge-msg-read {
+    background-color: rgba(34, 197, 94, 0.18) !important;
+    color: #4ade80 !important;
+}
+
+/* Table card header layout */
+.msg-table-header {
+    @apply flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4;
+}
+.msg-table-header__left {
+    @apply flex flex-col gap-2 w-full md:w-auto;
+}
+.msg-table-header__right {
+    @apply flex items-center gap-2 flex-nowrap shrink-0 overflow-x-auto pb-1 md:pb-0;
+}
+
+/* Search input – no white border */
+.msg-search-input {
+    @apply w-full md:w-[240px]!;
+}
+.msg-search-input.ant-input-affix-wrapper {
+    @apply bg-main-background! border-border-color! shadow-none! rounded-lg! text-primary-text!;
+}
+.msg-search-input.ant-input-affix-wrapper:hover,
+.msg-search-input.ant-input-affix-wrapper:focus,
+.msg-search-input.ant-input-affix-wrapper-focused {
+    @apply border-border-color! shadow-none! bg-hover!;
+}
+.msg-search-input .ant-input {
+    @apply bg-transparent! text-primary-text!;
+}
+
+/* Filter dropdowns */
+.msg-filter-select {
+    min-width: 120px !important;
+}
+.msg-filter-select .ant-select-selector {
+    @apply bg-main-background! border! border-border-color! text-primary-text! shadow-none! rounded-lg!;
+}
+.msg-filter-select .ant-select-selection-item {
+    @apply text-primary-text!;
+}
+.msg-filter-select .ant-select-arrow {
+    @apply text-placeholder!;
+}
+
+/* Drawer overall */
+.msg-detail-drawer .ant-drawer-body {
+    @apply p-0 bg-background;
+}
+.msg-detail-drawer .ant-drawer-content {
+    @apply bg-background border-l border-border-color;
+}
+
+/* Drawer content wrapper */
+.msg-drawer-content {
+    @apply flex flex-col h-full;
+}
+
+/* Drawer top header row */
+.msg-drawer-header {
+    @apply flex items-center gap-3 px-5 pt-5 pb-3;
+}
+.msg-drawer-avatar {
+    @apply shrink-0 w-12 h-12 rounded-full overflow-hidden flex items-center justify-center bg-hover border-2 border-border-color;
+}
+.msg-drawer-avatar__img {
+    @apply w-full h-full object-cover;
+}
+.msg-drawer-avatar__initials {
+    @apply text-sm font-bold text-primary-text uppercase;
+}
+.msg-drawer-meta {
+    @apply flex flex-col flex-1 min-w-0;
+}
+.msg-drawer-name {
+    @apply font-bold text-base text-primary-text truncate;
+}
+.msg-drawer-email {
+    @apply text-xs text-placeholder truncate;
+}
+.msg-drawer-actions {
+    @apply flex items-center gap-2 ml-auto shrink-0;
+}
+.msg-drawer-delete-btn {
+    @apply flex items-center justify-center w-8 h-8 rounded-full border border-border-color bg-main-background text-placeholder cursor-pointer transition-all duration-200 hover:border-danger hover:text-danger hover:bg-transparent;
+}
+.msg-drawer-close-btn {
+    @apply flex items-center justify-center w-8 h-8 rounded-full border border-border-color bg-main-background text-placeholder cursor-pointer transition-all duration-200 hover:border-primary-text hover:text-primary-text hover:bg-hover;
+}
+
+/* Divider */
+.msg-drawer-divider {
+    @apply border-t border-border-color/30 mx-5;
+}
+
+/* Subject block */
+.msg-drawer-subject {
+    @apply flex flex-col gap-0.5 px-5 pt-3;
+}
+.msg-drawer-subject__label {
+    @apply text-[10px] uppercase tracking-widest font-semibold text-placeholder;
+}
+.msg-drawer-subject__text {
+    @apply text-sm font-semibold text-primary-text leading-snug;
+}
+
+/* Date */
+.msg-drawer-date {
+    @apply px-5 pt-1 pb-3 text-xs text-placeholder;
+}
+
+/* Conversation thread */
+.msg-drawer-thread {
+    @apply flex-1 overflow-y-auto flex flex-col gap-3 px-5 py-3;
+    max-height: calc(100vh - 360px);
+}
+
+/* Chat bubbles */
+.msg-bubble {
+    @apply max-w-[85%] rounded-2xl px-4 py-3 flex flex-col gap-1;
+}
+.msg-bubble--customer {
+    @apply self-start bg-hover border border-border-color/40;
+}
+.msg-bubble--admin {
+    @apply self-end text-white;
+    background-color: var(--sidebar-active);
+}
+.msg-bubble__text {
+    @apply text-sm leading-relaxed text-inherit m-0;
+}
+.msg-bubble--customer .msg-bubble__text {
+    @apply text-primary-text;
+}
+.msg-bubble__time {
+    @apply text-[10px] opacity-70 self-end;
+}
+
+/* Reply box */
+.msg-reply-box {
+    @apply flex flex-col gap-2 px-5 pb-5 pt-3 border-t border-border-color/30 bg-background shrink-0;
+}
+.msg-reply-textarea {
+    @apply w-full bg-main-background border border-border-color rounded-xl px-3 py-2.5 text-sm text-primary-text placeholder-placeholder resize-none outline-none transition-colors duration-150 focus:border-[color:var(--sidebar-active)];
+}
+.msg-reply-footer {
+    @apply flex items-center justify-between;
+}
+.msg-reply-hint {
+    @apply text-[11px] text-placeholder;
+}
+.msg-send-btn {
+    @apply flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold text-white cursor-pointer border-0 transition-all duration-200 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+    background-color: var(--sidebar-active);
+}
+.msg-send-btn:hover:not(:disabled) {
+    opacity: 0.88;
+    transform: translateY(-1px);
+}
+
+/* Dark theme banner styling overrides */
+:root:not([data-theme='light']) {
+    --banner-bg-style: linear-gradient(135deg, #1c2152 0%, #0f1335 100%);
+    --banner-border: #2c3275;
+    --banner-circle-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.08));
+}
+
+/* ++++++++++++++++++++++++ Profile Page component +++++++++++++++++++++++*/
+.profile-banner__overlay {
+    @apply absolute inset-0 backdrop-blur-[2px] transition-colors duration-300;
+    background: linear-gradient(90deg, rgba(2, 21, 38, 0.95) 0%, rgba(2, 21, 38, 0.8) 50%, rgba(2, 21, 38, 0.3) 100%);
+}
+[data-theme='light'] .profile-banner__overlay {
+    background: linear-gradient(90deg, rgba(246, 246, 246, 0.95) 0%, rgba(246, 246, 246, 0.8) 50%, rgba(246, 246, 246, 0.3) 100%);
+}
+
+.profile-badge {
+    @apply px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+[data-theme='light'] .profile-badge {
+    background-color: rgba(102, 71, 236, 0.15);
+    color: var(--Banner-bg);
+}
+
+.profile-tab-btn {
+    @apply flex items-center gap-2 py-4 px-4 text-sm font-semibold border-b-2 border-transparent text-placeholder hover:text-primary-text transition-all duration-300 whitespace-nowrap cursor-pointer bg-transparent;
+}
+.profile-tab-btn--active {
+    @apply border-sidebar-active text-sidebar-active;
+}
+
+.profile-input {
+    @apply w-full px-4 py-2.5 bg-transparent border border-border-color rounded-xl text-sm text-primary-text focus:outline-none focus:border-sidebar-active;
+}
+
+.profile-textarea {
+    @apply w-full px-4 py-2.5 bg-transparent border border-border-color rounded-xl text-sm text-primary-text focus:outline-none focus:border-sidebar-active resize-none min-h-[100px];
+}
+
+.profile-submit-btn {
+    @apply bg-sidebar-active text-white font-bold py-2.5 px-6 rounded-xl hover:opacity-90 transition-opacity;
+}
+
+.profile-theme-btn {
+    @apply flex-1 py-3 border border-border-color rounded-xl flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 font-semibold text-sm text-primary-text hover:border-placeholder bg-transparent;
+}
+.profile-theme-btn--active {
+    @apply border-sidebar-active bg-sidebar-active/10 text-sidebar-active hover:border-sidebar-active;
+}
+
+/* Authentication Pages */
+.auth-card {
+    @apply relative w-full bg-main-background/80 backdrop-blur-xl border border-border-color rounded-[32px] p-8 sm:p-12 shadow-[0_8px_32px_rgba(0,0,0,0.12)];
+}
+
+.auth-shape-1 {
+    background: var(--banner-circle-bg);
+}
+.auth-shape-2 {
+    background: var(--sidebar-active);
+}
+.auth-shape-3 {
+    background: var(--banner-circle-bg);
+}
