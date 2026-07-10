@@ -1,75 +1,52 @@
-# React + TypeScript + Vite
+# Readora Admin Dashboard 📚
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive Admin Dashboard built for managing a bookstore's operations. Developed with a focus on a premium UI/UX, it includes a comprehensive dark/light mode, glassmorphism aesthetics, and smooth animations.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework:** [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) + Custom CSS Variables
+- **State Management:** [Zustand](https://github.com/pmndrs/zustand)
+- **Routing:** [React Router v6](https://reactrouter.com/)
+- **Forms & Validation:** [Formik](https://formik.org/) + [Yup](https://github.com/jquense/yup)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Secure Authentication:** Protected routes with a beautifully animated login screen.
+- **Dynamic Theming:** Seamless transition between Light and Dark modes.
+- **Book Management:** Full CRUD interface for cataloging and tracking book inventory.
+- **Order Processing:** Detailed tracking for all orders, returns, and transactions.
+- **Messages Inbox:** A centralized hub to communicate with customers and view inquiries.
+- **Profile & Settings:** Customizable user profile with notification and security preferences.
+- **Premium UI:** Glassmorphism cards, responsive layouts, and modern iconography.
 
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📸 Default Credentials
+For demonstration purposes, you can log in using:
+```
+Email: ishika@gmail.com
+Password: Ishika@1234
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Dashboard
+![Dashboard](./dashboard.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/Book-Store-Admin-Dashboard.git
+   cd Book-Store-Admin-Dashboard
+   ```
+
+2. **Install dependencies:**
+   ```npm install```
+
+3. **Start the development server:**
+   ```npm run dev```
