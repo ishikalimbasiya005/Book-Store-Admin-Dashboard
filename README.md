@@ -28,6 +28,8 @@ For demonstration purposes, you can log in using:
 Email: ishika@gmail.com
 Password: Ishika@1234
 ```
+## Login Page
+![Login](./login.png)
 
 ## Dashboard
 ![Dashboard](./dashboard.png)
