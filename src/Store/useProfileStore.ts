@@ -7,8 +7,8 @@ export const useProfileStore = create<ProfileState>()(
   persist(
     (set) => ({
       profile: {
-        name: 'Ishika Sharma',
-        email: 'ishika.sharma@example.com',
+        name: 'Ishika Limbasiya',
+        email: 'ishika@gmail.com',
         phone: '+1 (555) 019-2834',
         location: 'San Francisco, CA',
         role: 'Super Admin',

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { motion } from 'framer-motion';
@@ -21,8 +21,8 @@ const Login = () => {
 
     const formik = useFormik({
         initialValues: {
-            email: '',
-            password: '',
+            email: 'ishika@gmail.com',
+            password: 'Ishika@1234',
             rememberMe: false,
         },
         validationSchema: LoginSchema,
@@ -32,7 +32,7 @@ const Login = () => {
             await new Promise(resolve => setTimeout(resolve, 1000));
             login({
                 id: '1',
-                name: 'Admin User',
+                name: 'Ishika Limbasiya',
                 email: values.email,
                 role: 'admin',
                 avatar: '/assets/Images/female_profile_avatar.png'
@@ -65,7 +65,7 @@ const Login = () => {
                     <CommonInput
                         name="email"
                         type="email"
-                        placeholder="admin@example.com"
+                        placeholder="ishika@gmail.com"
                         prefix={<FiMail className="text-placeholder" />}
                         value={formik.values.email}
                         onChange={formik.handleChange}
@@ -82,7 +82,7 @@ const Login = () => {
                         <CommonInput
                             name="password"
                             type={showPassword ? "text" : "password"}
-                            placeholder="••••••••"
+                            placeholder="Ishika@1234"
                             prefix={<FiLock className="text-placeholder" />}
                             value={formik.values.password}
                             onChange={formik.handleChange}
@@ -126,13 +126,6 @@ const Login = () => {
                     {isLoading ? 'Signing In...' : 'Sign In'}
                 </CommonButton>
             </form>
-
-            <div className="mt-8 text-center text-sm text-secondary-text">
-                Don't have an account?{' '}
-                <Link to={ROUTES.REGISTER} className="text-sidebar-active hover:text-accent font-bold transition-colors">
-                    Create Account
-                </Link>
-            </div>
         </motion.div>
     );
 };

@@ -3,7 +3,6 @@ import MainLayout from "../Layout";
 import AuthLayout from "../Layout/AuthLayout";
 import NotFound from "../Pages/NotFound";
 import Login from "../Pages/Auth/Login";
-import Register from "../Pages/Auth/Register";
 import ProtectedRoute from "./ProtectedRoute";
 import PublicRoute from "./PublicRoute";
 import { Routes } from "./PageRoutes";
@@ -16,8 +15,7 @@ export const routes = createBrowserRouter([
         {
             element: <AuthLayout />,
             children: [
-                { path: ROUTES.LOGIN, element: <Login /> },
-                { path: ROUTES.REGISTER, element: <Register /> }
+                { path: ROUTES.LOGIN, element: <Login /> }
             ]
         }
     ]
